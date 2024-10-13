@@ -1,0 +1,15 @@
+<div class="container">
+  <img [src]="item.image" alt="item image" />
+  <hr />
+  <h2>{{ item.name }}</h2>
+  <hr />
+  <p><span id="item">Item description:</span>{{ item.description }}</p>
+  <hr />
+  <div class="price-btn">
+    <div>
+      <span>Price: </span
+      ><span class="price"> {{ item.price | currency : "EUR" }}</span>
+    </div>
+    <button (click)="addToCart()">Add to Cart</button>
+  </div>
+</div>

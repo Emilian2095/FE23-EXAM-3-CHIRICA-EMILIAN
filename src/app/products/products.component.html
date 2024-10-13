@@ -1,0 +1,36 @@
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+  @for (item of items; track $index) {
+  <div>
+    <div class="card">
+      <img [src]="item.image" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+        <hr />
+        <p class="card-text">
+          Price: <span>{{ item.price | currency : "EUR" }}</span>
+        </p>
+        <hr />
+        <div class="btns">
+          <button
+            *ngIf="item.availability"
+            class="details"
+            routerLink="/details/{{ $index }}"
+          >
+            Details
+          </button>
+          <button
+            (click)="addToCart(item)"
+            *ngIf="item.availability"
+            class="cart"
+          >
+            Add to Cart
+          </button>
+          <p *ngIf="!item.availability">
+            <span class="available">Not available</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</div>

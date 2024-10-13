@@ -1,0 +1,72 @@
+<div class="cart-page">
+  <div class="left">
+    <h2>Shopping Cart</h2>
+
+    <hr />
+    @for (item of items; track $index) {
+    <div class="container">
+      <div><img [src]="item.image" alt="item image" /></div>
+      <div class="namePrice">
+        <div class="name">{{ item.name }}</div>
+
+        <button (click)="plusQtty($index)" class="add">+</button>
+
+        <div class="qtty">QTTY: {{ item.qtty }}</div>
+
+        <button (click)="minusQtty($index)" class="minus">-</button>
+
+        <button (click)="deleteQtty($index)" class="delete">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+
+        <div class="price-text">
+          Price:
+          <span class="price">{{ item.price | currency : "EUR" }}</span>
+        </div>
+      </div>
+    </div>
+    <hr />
+    }
+  </div>
+  <div class="right">
+    <h2 id="summary">Summary</h2>
+    <hr />
+    <div class="summary">
+      <p>Products</p>
+      <span>{{ total | currency : "EUR" }}</span>
+    </div>
+    <div class="summary">
+      <p>Service</p>
+      <span>{{ service | currency : "EUR" }}</span>
+    </div>
+    <div class="summary">
+      <p>Discount</p>
+      <span>{{ discount | currency : "EUR" }}</span>
+    </div>
+    <hr />
+    <div class="summary">
+      <h5>Price without discount<br />(including VAT)</h5>
+      <span>{{ noDiscount | currency : "EUR" }}</span>
+    </div>
+    <hr />
+    <div class="summary">
+      <h4>Total Amount <br />(including VAT)</h4>
+      <span>{{ price | currency : "EUR" }}</span>
+    </div>
+  </div>
+</div>
+
+<form action="">
+  <h4>Order Form</h4>
+  <p class="info">please fill up the info for delivery</p>
+
+  <div class="form">
+    Name:
+    <input type="text" />
+  </div>
+  <div class="form">
+    Adresse:
+    <input type="text" />
+  </div>
+  <button class="purchase">Purchase</button>
+</form>

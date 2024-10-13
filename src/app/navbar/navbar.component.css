@@ -1,0 +1,25 @@
+.navbar{
+    background-color: rgba(0, 0, 0, 0.712);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+    }
+    .navbar-brand{
+    color: teal;
+    font-weight: bold ;
+    border-bottom: 5px double teal;
+    }
+    a{
+        color: khaki;
+        font-weight: bold;
+    }
+    img{
+        width: 50px;
+        margin-right: .5rem;
+        border-radius: 50px;
+      
+    }
+    button{
+        background-color: grey;
+    }

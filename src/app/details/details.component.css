@@ -1,0 +1,34 @@
+.container{
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+}
+img{
+    max-width: 400px;
+}
+#item{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: none;
+}
+.price{
+    color: goldenrod;
+    font-weight: bold;
+}
+p{
+    font-style: oblique;
+}
+.price-btn{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    color: teal;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding-inline: .5rem;
+    font-weight: bold;
+}
+.available{
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,77 @@
+.image {
+    margin-top: 4.1rem;
+    height: 40vh;
+
+}
+.carousel-item img{
+    height: 60vh;
+    width: 100%;
+}
+.carousel-item{
+    position: relative;
+}
+.p1{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: whitesmoke;
+    background: rgba(128, 128, 128, 0.616);
+    font-size: 3rem;
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+.tag{
+    color: tomato;
+    border-bottom: 5px double tomato;
+}
+button{
+    margin-top: 11.5rem;
+}
+
+
+.container{
+    margin-top: 25vh;
+}
+.logo{
+    width: 100px;
+    border-radius: 50px;
+}
+h2 span{
+    color: teal;
+    border-bottom: 5px double teal;
+    margin-left: .5rem;
+}
+.extra{
+    background-color: rgba(128, 128, 128, 0.26);
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+h3{
+text-align: center;
+font-family: cursive;
+font-style: italic;
+font-weight: bold;
+color: tomato;
+
+}
+ .text{
+    text-align: center;
+    font-weight:bold ;
+    color: steelblue;
+}
+.extraThree{
+    width: 70%;
+    margin-inline:auto;
+    margin-top: 2rem;
+
+}
+.extraThree p{
+    border: 5px double teal;
+    padding: 1.5rem;
+    font-style: oblique;
+   
+}
