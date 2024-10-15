@@ -1,5 +1,12 @@
-# FE23EXAM3CHIRICAEMILIAN
+![logo](https://github.com/user-attachments/assets/0eebe41e-d76b-441d-a7c1-3e8f413e0c22)
 
+# FAMAZON <br>
+<h3>This Project was build with</h3> <hr>
+<ul>
+  <li><b>HTML</b></li>
+  <li><b>CSS</b></li>
+  <li><b>JavaScript</b></li>
+</ul>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
 
 ## Development server
